@@ -1,0 +1,19 @@
+{
+  "name": "night-fair-games",
+  "private": true,
+  "version": "0.1.0",
+  "description": "夜市游乐场：套圈 & 打气球（Three.js + Rapier 物理）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.21.0",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.6"
+  }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>夜市游乐摊 · 套圈 & 打气球</title>
+</head>
+<body data-mode="loading">
+  <div id="app"></div>
+
+  <div id="loading">
+    <div class="lantern-deco"></div>
+    <h1>夜市 · 游乐摊</h1>
+    <p class="subtitle">套圈 &nbsp;·&nbsp; 打气球</p>
+    <div id="loadText">正在布置摊位…</div>
+    <button id="startBtn" hidden>进入夜市</button>
+  </div>
+
+  <div id="hud" hidden>
+    <div id="stats" class="panel"></div>
+    <div id="topRight">
+      <button id="assistBtn" class="pill" title="套圈时显示抛物线">辅助线</button>
+      <button id="musicBtn" class="pill">音乐</button>
+      <button id="leaveBtn" class="pill">← 离开摊位 (Esc)</button>
+    </div>
+    <div id="hint" class="panel"></div>
+    <div id="toast"></div>
+    <div id="bag" class="panel">
+      <div class="bagTitle">我的奖品 <span id="bagCount">0</span></div>
+      <div id="bagList"></div>
+    </div>
+    <div id="menu">
+      <div class="card" data-game="ring">
+        <div class="card-icon ring-icon"></div>
+        <div>
+          <div class="card-title">套圈</div>
+          <div class="card-sub">10元15个 · 套中即送</div>
+        </div>
+      </div>
+      <div class="card" data-game="balloon">
+        <div class="card-icon balloon-icon"></div>
+        <div>
+          <div class="card-title">打气球</div>
+          <div class="card-sub">10元20枪 · 打中有奖</div>
+        </div>
+      </div>
+    </div>
+    <div id="steady"><div class="steady-label" id="steadyLabel">稳住…</div><div class="steady-bar"><div id="steadyFill"></div></div></div>
+    <div id="crosshair"><i class="l"></i><i class="r"></i><i class="t"></i><i class="b"></i><i class="d"></i></div>
+    <div id="hitmark"></div>
+    <div id="roundPanel" class="panel">
+      <h2></h2>
+      <div class="lines"></div>
+      <button class="primary"></button>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
