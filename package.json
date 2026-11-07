@@ -1,5 +1,5 @@
 {
-  "name": "night-fair-games",
+  "name": "432_lab-fair-games",
   "private": true,
   "version": "0.1.0",
   "description": "夜市游乐场：套圈 & 打气球（Three.js + Rapier 物理）",
